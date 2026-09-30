@@ -14,12 +14,12 @@ class Node {
 		if (child._parent !== this) { throw Object.assign(new Error("not a child"), { child, parent: this }) }
 
 		const node = child._nodeInParent
-		this._children.remove(node)
+		this._children._remove(node)
 		child._parent = null
 		child._nodeInParent = null
 	}
 
-	repaceChild (target, child) {
+	replaceChild (target, child) {
 		if (target._parent !== this) { throw Object.assign(new Error("not a child"), { child: target, parent: this }) }
 
 		child.remove()

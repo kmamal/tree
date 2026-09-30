@@ -4,21 +4,18 @@
   "description": "tree",
   "repository": {
     "type": "git",
-    "url": "git@github.com:kmamal/tree.git"
+    "url": "git+ssh://git@github.com:kmamal/tree.git"
   },
   "license": "MIT",
   "main": "./src/index.js",
-  "exports": {
-    ".": "./src/index.js"
-  },
+  "exports": "./src/index.js",
   "scripts": {
-    "test": "npx @kmamal/testing",
-    "update-exports": "node ./scripts/update-exports.mjs"
+    "test": "npx @kmamal/testing"
   },
   "dependencies": {
-    "@kmamal/doubly-linked-list": "^0.0.1"
+    "@kmamal/doubly-linked-list": "0.0.1"
   },
   "devDependencies": {
-    "@kmamal/testing": "^0.0.24"
+    "@kmamal/testing": "0.0.34"
   }
 }
